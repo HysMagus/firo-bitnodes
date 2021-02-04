@@ -12,7 +12,7 @@ from protocol import Serializer
 class Reader(Cache):
     def __init__(self, filepath):
         self.filepath = filepath
-        self.serializer = Serializer(magic_number=unhexlify('f9beb4d9'))
+        self.serializer = Serializer(magic_number=unhexlify('e3d9fef1'))
         self.streams = defaultdict(PriorityQueue)
         self.stream = Stream()
 
